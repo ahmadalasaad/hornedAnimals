@@ -3,13 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 class HornedBeast extends Component {
   state = {
-    counter: 0
+    counter: 0 ,
+    h:''
   }
   handeleinc = (e) => {
     e.preventDefault();
     let counter = this.state.counter;
     counter += 1;
-    this.setState({ counter })
+    let h=this.state.h;
+    h+='💖';
+    this.setState({ counter , h })
   }
   render() {
     return (
@@ -22,7 +25,7 @@ class HornedBeast extends Component {
               {this.props.description}
             </Card.Text>
             <Card.Text>
-            💖  {this.state.counter}
+              {this.state.h}  {this.state.counter}
             </Card.Text>
           </Card.Body>
         </Card>
