@@ -1,5 +1,5 @@
 import React,{Component, Fragment} from 'react';
-import data from '../assest/data.json'
+import data from '../assest/data.json';
 import HornedBeast from './HornedBeast';
 class Main extends Component {
   
