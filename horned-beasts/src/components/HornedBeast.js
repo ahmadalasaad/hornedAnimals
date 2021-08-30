@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 class HornedBeast extends Component {
   state = {
@@ -12,8 +13,8 @@ class HornedBeast extends Component {
   }
   render() {
     return (
-      <div className="horned">
-        <Card style={{ width: '18rem' }}>
+      <Fragment className="horned">
+        <Card style={{ width: '18rem' , display:'inline-block' , height:'200px', margin:'2rem'} }>
           <Card.Img variant="top" src={this.props.image_url} onClick={this.handeleinc} title="horned" />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
@@ -21,12 +22,12 @@ class HornedBeast extends Component {
               {this.props.description}
             </Card.Text>
             <Card.Text>
-            Number of Vote   {this.state.counter}
+            💖  {this.state.counter}
             </Card.Text>
           </Card.Body>
         </Card>
 
-      </div>
+      </Fragment>
     );
   }
 }
