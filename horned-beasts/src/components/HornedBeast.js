@@ -13,6 +13,7 @@ class HornedBeast extends Component {
     let h=this.state.h;
     h+='💖';
     this.setState({ counter , h })
+    this.props.handleClose(this.props.title,this.props.description,this.props.image_url);
   }
   render() {
     return (
