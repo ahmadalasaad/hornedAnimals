@@ -35,7 +35,6 @@ class App extends Component {
     this.setState({
       data:newData
     })
-   console.log(this.state.data);
   }
   render(){
   return (

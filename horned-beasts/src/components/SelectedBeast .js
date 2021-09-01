@@ -13,7 +13,7 @@ import Button from 'react-bootstrap/Button';
           <Modal.Body>
             {this.props.description}
           </Modal.Body>
-         <img className="imagemodel" src={this.props.image_url} Style={{width:'100%'}} />
+         <img className="imagemodel" src={this.props.image_url} style={{width:'100%'}} alt={this.props.title} />
           <Modal.Footer>
             <Button variant="secondary" onClick={()=>this.props.handleClose()}>
               Close
